@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:gravity="center"
+    android:background="@color/darkBg"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            tools:visibility="visible"
+
+            android:visibility="invisible"
+            android:id="@+id/bgshape"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:src="@drawable/bgshapec"
+            /></LinearLayout>
+    <LinearLayout
+        tools:visibility="visible"
+
+        android:visibility="invisible"
+        android:id="@+id/slide1hover"
+        android:layout_width="113dp"
+        android:layout_height="493dp"
+        android:rotation="75"
+        android:background="#494949"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="240dp"
+
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        tools:visibility="visible"
+
+        android:visibility="invisible"
+        android:id="@+id/slide1"
+        android:layout_width="113dp"
+        android:layout_height="493dp"
+        android:rotation="75"
+        android:background="#494949"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="240dp"
+
+
+        >
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:rotation="-75"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="40dp"
+            android:paddingTop="170dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sl3"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        tools:visibility="visible"
+
+        android:visibility="invisible"
+
+        android:id="@+id/slide2"
+
+        android:layout_width="113dp"
+        android:layout_height="493dp"
+        android:rotation="75"
+        android:background="#494949"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+
+        >
+
+        <ImageView
+            android:layout_width="450dp"
+            android:layout_height="240dp"
+            android:rotation="-75"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="270dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sl2"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        tools:visibility="visible"
+
+        android:visibility="invisible"
+
+        android:id="@+id/slide3"
+
+        android:layout_width="113dp"
+        android:layout_height="493dp"
+        android:rotation="75"
+        android:background="#494949"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+
+        >
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:rotation="-75"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="40dp"
+            android:paddingTop="50dp"
+
+            android:src="@drawable/sl1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:gravity="center">
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanello"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bold"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:visibility="invisible"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="Watch everything you want for free!"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="280dp">
+        <TextView
+            android:id="@+id/btntext"
+            android:visibility="invisible"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTER NOW"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bold"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:translationZ="8dp"
+            />
+        <ImageView
+            tools:visibility="visible"
+
+            android:visibility="invisible"
+            android:id="@+id/blur"
+            android:layout_width="198dp"
+            android:layout_height="100dp"
+            android:src="@drawable/btnblur"
+            android:layout_gravity="center"
+            android:translationZ="7dp"/>
+        <Button
+            android:visibility="gone"
+
+            android:id="@+id/btn2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn2"
+            android:layout_gravity="center"/>
+        <Button
+            android:visibility="gone"
+
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+</FrameLayout>
